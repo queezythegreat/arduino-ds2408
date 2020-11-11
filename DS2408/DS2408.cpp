@@ -1,5 +1,11 @@
 #include "DS2408.h"
-#include <WProgram.h>
+
+#if defined(ARDUINO) && ARDUINO >= 100
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
+
 #include <stdio.h>
 
 
@@ -165,7 +171,6 @@ uint8_t  DS2408::find(Devices* devices) {
     Device device;
     while(this->search(device)) {
         if(device[0] == DS2408_FAMILY) {
-            Serial.println("Count!!");
             count++;
         }
     }
