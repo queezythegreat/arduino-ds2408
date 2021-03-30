@@ -7,7 +7,7 @@
 
 /**
  * OneWire Commands
- **/
+
 #define ONEWIRE_READ_CMD           0x33
 #define ONEWIRE_MATCH_CMD          0x55
 #define ONEWIRE_SEARCH_CMD         0xF0
@@ -16,7 +16,7 @@
 #define ONEWIRE_OVERRIDE_MATCH_CMD 0x69
 #define ONEWIRE_OVERRIDE_SKIP_CMD  0x3C
 #define ONEWIRE_RESUME_CMD         0xA5
-
+ **/
 
 // DS2408
 #define DS2408_FAMILY 0x29
